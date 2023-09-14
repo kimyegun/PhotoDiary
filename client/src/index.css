@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    src: url(./fonts/AppleSDGothicNeoM.ttf);
+}
+
+.logo{
+    max-width: 150px;
+}
+.min-logo{
+    max-width: 60px;
+}
