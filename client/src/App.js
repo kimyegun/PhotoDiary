@@ -6,6 +6,8 @@ import Home from './components/Home';
 import CreatePost from './components/CreatePost';
 import UpdatePost from './components/UpdatePost';
 import SearchForm from './components/SearchForm';
+import Calendar from './components/Calendar';
+import TodoList from './components/TodoList'
 
 
 const App = () => {
@@ -40,6 +42,8 @@ const App = () => {
         <div className='max-w-screen-lg mx-auto p-10'>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/calendar' element={<Calendar/>}/>
+            <Route path='/todolist' element={<TodoList/>}/>
             <Route path='/create-post' element={<CreatePost closeNav={closeNav} />} />
             <Route path='/update-post/:slug' element={<UpdatePost closeNav={closeNav} />} />
           </Routes>
